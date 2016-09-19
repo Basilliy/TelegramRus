@@ -5,5 +5,5 @@
  * Date: 19.09.2016
  * Time: 20:50
  */
-$output = file_get_contents('php://input');
+$output = json_decode(file_get_contents('php://input'),true);
 file_put_contents("logs.txt",$output);
